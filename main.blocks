@@ -1,1 +1,21 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="e(q7.ww8,XO)c/`Yvb{n">numTest</variable></variables><block type="pxt-on-start" id="x[?a,j@)-MY/lA.]Gmq?" x="56" y="7"><statement name="HANDLER"><block type="variables_set" id="A94WBR3vM]2^1l[nl,Mo"><field name="VAR" id="e(q7.ww8,XO)c/`Yvb{n">numTest</field><value name="VALUE"><shadow type="math_number" id="TpVbL~#SCzcrV2nIJ?dy"><field name="NUM">0</field></shadow></value><next><block type="radio_set_transmit_serial_number" id=";Fc)sdu9Z2MRlOZd)Q12"><value name="transmit"><shadow type="logic_boolean" id="lMUfXzlCK-xN@rgs$*}0"><field name="BOOL">TRUE</field></shadow></value><next><block type="typescript_statement" id="ziB=BY{-qL9RA;E|=8Sr"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="type test=()=&gt;void" numlines="1"></mutation><next><block type="typescript_statement" id="[EeCy1;`~(rer!hiNEPJ"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="let tests:test[]" numlines="1" declaredvars="tests"></mutation></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="4)KMbh9!S)RcZLg08gB*" x="804" y="56"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="radio_datagram_send" id=",s3]d=/%33j*LXGt=cDH"><value name="value"><shadow type="math_number" id="fATa;j{:w)up}|e$i+*["><field name="NUM">0</field></shadow></value></block></statement></block><block type="radio_on_number_drag" id="{W0(t%P2.CRO!xcPVC@`" x="28" y="295"><value name="HANDLER_DRAG_PARAM_receivedNumber"><block type="argument_reporter_number" id="7WmN%em/~fQUB2+myeGI" deletable="false"><field name="VALUE">n</field></block></value><statement name="HANDLER"><block type="typescript_statement" id="C@T(;=,-^^GPPVv+*Lfk"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="console.log(radio.receivedPacket(RadioPacketProperty.SerialNumber))" numlines="1"></mutation></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><comment id="dmPe`4cs*kEc3A9w$,oJ" x="393.8271755642361" y="206.17285834418402" w="480" h="360">
+radio.onReceivedNumber(function (n) {
+courseParticipant.inscription_au_parcours(n,"test","dédé")
+
+})
+
+radio.onReceivedString((s)=&gt;console.log(s))
+
+input.onButtonPressed(Button.A, function () {
+tests[numTest++]()
+})
+let numTest = 0
+radio.setTransmitSerialNumber(true)
+type test=()=&gt;void
+let tests:test[]=[]
+
+let test1:test = ()=&gt;{
+radio.sendNumber(control.deviceSerialNumber())
+}
+tests.push(test1)
+</comment><block type="pxt-on-start" id="${fn6q97kCors1Z1{JXS" x="56" y="7"></block></xml>

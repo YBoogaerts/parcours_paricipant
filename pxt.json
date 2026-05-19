@@ -4,7 +4,9 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "protocole_microNet": "github:yboogaerts/protocole_micronet",
+        "Protocole_multi_groupe": "github:YBoogaerts/protocole_multi_groupe"
     },
     "files": [
         "main.blocks",
