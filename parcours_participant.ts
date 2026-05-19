@@ -1,4 +1,4 @@
-
+/*
 namespace courseParticipant {
     let idServer: number = 0;
     let parcours: string = "????"
@@ -58,3 +58,4 @@ namespace courseParticipant {
     }
 
 }
+*/

@@ -5,7 +5,7 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "protocole_microNet": "github:YBoogaerts/protocole_micronet#1be5169d0d930432e8ec1b8c8304f20fea929224",
+        "protocole_microNet": "github:yboogaerts/protocole_micronet#162fa6f053480f5b3918d9c7dc579aec27af6f77",
         "Protocole_multi_groupe": "github:YBoogaerts/protocole_multi_groupe#1b8b220145fc61759d474d60b085647e7b3ce754"
     },
     "files": [
