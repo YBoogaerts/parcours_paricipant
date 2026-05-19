@@ -1,0 +1,28 @@
+{
+    "name": "Parcours_paricipant",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*",
+        "protocole_microNet": "github:YBoogaerts/protocole_micronet#1be5169d0d930432e8ec1b8c8304f20fea929224",
+        "Protocole_multi_groupe": "github:YBoogaerts/protocole_multi_groupe#1b8b220145fc61759d474d60b085647e7b3ce754"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "parcours_participant.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "8.0.22",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}
