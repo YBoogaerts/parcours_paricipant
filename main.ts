@@ -1,19 +1,10 @@
-radio.onReceivedNumber(function (n) {
-    courseParticipant.inscription_au_parcours(n,"test","dédé")
-
+radio.onReceivedNumber(function (receivedNumber) {
+    courseParticipant.inscription_au_parcours(receivedNumber, "loup", "toto")
 })
-
-radio.onReceivedString((s)=>console.log(s))
-
+courseParticipant.onReceiveString(function (receivedString) {
+    basic.showString(receivedString)
+})
 input.onButtonPressed(Button.A, function () {
-   tests[numTest++]()
+    basic.showString("C")
 })
-let numTest = 0
-radio.setTransmitSerialNumber(true)
-type test=()=>void
-let tests:test[]=[]
-
-let test1:test = ()=>{
-    radio.sendNumber(control.deviceSerialNumber())
-}
-tests.push(test1)
+radio.setGroup(1)
